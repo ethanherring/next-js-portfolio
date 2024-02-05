@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/Users/ethanherring/Documents/github/next-js-portfolio/src/app/layout\":[\"static/media/42ca9a2dc174b9b9-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/home/ethan/Documents/coding/next-js-portfolio/src/app/layout\":[\"static/media/42ca9a2dc174b9b9-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"

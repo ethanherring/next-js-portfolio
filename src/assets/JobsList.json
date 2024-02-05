@@ -1,0 +1,35 @@
+[
+  {
+    "job": "Data Insights Analyst III - Full Stack Development",
+    "description": "Worked to  bring data to life within supply chain.",
+    "skills": [
+      "ReactJS",
+      "TailwindCSS",
+      "Kubernetes"
+    ]
+  },
+  {
+    "job": "Business Intelligence Analyst III - Supply Chain",
+    "description": "Worked to  bring data to life within supply chain.",
+    "skills": [
+      "AWS ECS",
+      "SQL"
+    ]
+  },
+  {
+    "job": "Leadership Development Program - Data Analytics",
+    "description": "Worked to  bring data to life within supply chain.",
+    "skills": [
+      "Python",
+      "PowerBI"
+    ]
+  },
+  {
+    "job": "Leadership Development Program - Data Analytics",
+    "description": "Worked to  bring data to life within supply chain.",
+    "skills": [
+      "Python",
+      "PowerBI"
+    ]
+  }
+]

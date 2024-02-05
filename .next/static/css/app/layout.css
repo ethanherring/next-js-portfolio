@@ -531,11 +531,11 @@ video {
 .white-glow {
     box-shadow: 5px 5px 150px 10px rgba(255, 255, 255, 0.3);
   }
-.h-minus-header {
-    height: calc(100vh - 65px);
-  }
 .visible {
   visibility: visible;
+}
+.invisible {
+  visibility: hidden;
 }
 .absolute {
   position: absolute;
@@ -571,6 +571,9 @@ video {
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
+}
+.ml-3 {
+  margin-left: 0.75rem;
 }
 .mr-2 {
   margin-right: 0.5rem;
@@ -614,6 +617,9 @@ video {
 .min-h-\[65px\] {
   min-height: 65px;
 }
+.min-h-screen {
+  min-height: 100vh;
+}
 .w-1\/2 {
   width: 50%;
 }
@@ -626,8 +632,17 @@ video {
 .w-\[200px\] {
   width: 200px;
 }
+.w-\[25px\] {
+  width: 25px;
+}
 .w-\[300px\] {
   width: 300px;
+}
+.w-\[450px\] {
+  width: 450px;
+}
+.w-\[50px\] {
+  width: 50px;
 }
 .w-\[90\%\] {
   width: 90%;
@@ -704,6 +719,9 @@ video {
 .overflow-y-auto {
   overflow-y: auto;
 }
+.rounded-2xl {
+  border-radius: 1rem;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -737,9 +755,20 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
+.border-transparent {
+  border-color: transparent;
+}
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+.bg-\[\#0F172A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+.bg-\[\#112B3A\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 43 58 / var(--tw-bg-opacity));
 }
 .bg-black {
   --tw-bg-opacity: 1;
@@ -830,6 +859,9 @@ video {
 .pt-5 {
   padding-top: 1.25rem;
 }
+.text-center {
+  text-align: center;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -838,15 +870,26 @@ video {
   font-size: 1.875rem;
   line-height: 2.25rem;
 }
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.font-bold {
+  font-weight: 700;
 }
 .font-extrabold {
   font-weight: 800;
 }
 .font-medium {
   font-weight: 500;
+}
+.text-\[\#57DAC7\] {
+  --tw-text-opacity: 1;
+  color: rgb(87 218 199 / var(--tw-text-opacity));
 }
 .text-black {
   --tw-text-opacity: 1;
@@ -885,6 +928,13 @@ video {
   -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 
 /*@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap);*/
@@ -917,9 +967,22 @@ body {
   border-style: dashed;
 }
 
+.hover\:border-white\/20:hover {
+  border-color: rgb(255 255 255 / 0.2);
+}
+
+.hover\:bg-gray-500\/50:hover {
+  background-color: rgb(107 114 128 / 0.5);
+}
+
 .hover\:bg-indigo-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+}
+
+.hover\:text-\[\#57DAC7\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(87 218 199 / var(--tw-text-opacity));
 }
 
 .hover\:text-gray-400:hover {
@@ -946,8 +1009,24 @@ body {
 
 @media (min-width: 768px) {
 
+  .md\:visible {
+    visibility: visible;
+  }
+
+  .md\:mt-\[-10px\] {
+    margin-top: -10px;
+  }
+
   .md\:flex {
     display: flex;
+  }
+
+  .md\:justify-center {
+    justify-content: center;
+  }
+
+  .md\:gap-2 {
+    gap: 0.5rem;
   }
 }
 
