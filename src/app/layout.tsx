@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
-import { Inter, Barlow } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
 // const inter = Inter({ subsets: ['latin'] })
-const barlow = Barlow({
+const inter = Inter({
   subsets: ['latin'], // Include the Latin character subset
-  weight: "400",
+  // weight: "400",
   display: 'swap', // Ensure text is visible while font loads
 });
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" style={{ scrollBehavior: 'smooth', overflowX: 'hidden' }}>
-      <body className={barlow.className}>{children}</body>
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

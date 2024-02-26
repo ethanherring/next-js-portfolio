@@ -1,7 +1,9 @@
 [
   {
-    "job": "Data Insights Analyst III - Full Stack Development",
-    "description": "Worked to  bring data to life within supply chain.",
+    "job": "Data Insights Analyst III",
+    "time_period": "2023 - PRESENT",
+    "description": "Created supply chain analytics portal. Blahb bla;buahs;ekjnga;sej;asheg;lkn eth;soeitnasef asefasenfa sefaetesting thene i build thisase thigngiyn f asefiasne;fnsl.",
+    "job_link": "https://www.blueorigin.com/",
     "skills": [
       "ReactJS",
       "TailwindCSS",
@@ -9,8 +11,10 @@
     ]
   },
   {
-    "job": "Business Intelligence Analyst III - Supply Chain",
-    "description": "Worked to  bring data to life within supply chain.",
+    "job": "Business Intelligence Analyst III",
+    "time_period": "2022 - 2023",
+    "description": "Worked to  bring data to life within supply chain. Blah blah blah testing here whatever test exting tgepoaiuhgpsoeugba;sekfna;soeif aseflausbefpasef aseiufalskef ase fpasef.",
+    "job_link": "https://www.blueorigin.com/",
     "skills": [
       "AWS ECS",
       "SQL"
@@ -18,7 +22,9 @@
   },
   {
     "job": "Leadership Development Program - Data Analytics",
-    "description": "Worked to  bring data to life within supply chain.",
+    "time_period": "2020 - 2022",
+    "description": "Worked to  bring data to life within supply chain. Blah blah blah testing here whatever test exting tgepoaiuhgpsoeugba;sekfna;soeif aseflausbefpasef aseiufalskef ase fpasef.",
+    "job_link": "https://www.textron.com/",
     "skills": [
       "Python",
       "PowerBI"
@@ -26,7 +32,19 @@
   },
   {
     "job": "Leadership Development Program - Data Analytics",
-    "description": "Worked to  bring data to life within supply chain.",
+    "time_period": "2020 - 2022",
+    "description": "Worked to  bring data to life within supply chain. Blah blah blah testing here whatever test exting tgepoaiuhgpsoeugba;sekfna;soeif aseflausbefpasef aseiufalskef ase fpasef.",
+    "job_link": "https://www.textron.com/",
+    "skills": [
+      "Python",
+      "PowerBI"
+    ]
+  },
+  {
+    "job": "Leadership Development Program - Data Analytics",
+    "time_period": "2020 - 2022",
+    "description": "Worked to  bring data to life within supply chain. Blah blah blah testing here whatever test exting tgepoaiuhgpsoeugba;sekfna;soeif aseflausbefpasef aseiufalskef ase fpasef.",
+    "job_link": "https://www.textron.com/",
     "skills": [
       "Python",
       "PowerBI"
