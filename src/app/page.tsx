@@ -1,19 +1,21 @@
 import RootLayout from "./layout"
 import JobCard from "@/components/JobCard"
+import ProjectCard from "@/components/ProjectCard"
 import NavigationLinks from "@/components/NavigationLinks"
 import { FaXTwitter } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { FaNewspaper } from "react-icons/fa";
 import { FaGoodreads } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
-import InlineArrow from "@/components/InlineArrow";
-import MouseGridGlow from "@/components/MouseGridGlow";
+
+// bg-[#0F172A]
 
 const Page = () => {
 
   return (
     <RootLayout>
-      <div className="bg-[#0F172A] text-white">
+      <div className="bg-black text-white selection:bg-[#756943]">
         {/* <MouseGridGlow /> */}
         {/* <Header /> */}
         {/* <TerminalGraphic /> */}
@@ -23,20 +25,20 @@ const Page = () => {
             <div>
               <p className="text-5xl font-bold text-center mt-18 pb-4">ETHAN HERRING</p>
               <p className="text-md font-bold text-center pb-4">Data Analyst III | Blue Origin</p>
-              <p className="text-center pb-12">I build engaging Full Stack data applications.</p>
+              <p className="text-center pb-12">I build engaging Full Stack data experiences.</p>
             </div>
             <div className="pl-12">
               <NavigationLinks />
             </div>
-            <div className="flex gap-4 justify-center">
+            <div className="fixed bottom-10 left-[20%] flex gap-4">
               <FaXTwitter size={24} />
               <a href="https://github.com/ethanherring"><FaGithub size={20} />
               </a>
               <a href="https://www.linkedin.com/in/ethan-herring-a00448132/">
                 <FaLinkedin size={24} />
               </a>
-              <a href="https://www.linkedin.com/in/ethan-herring-a00448132/">
-                <FaLinkedin size={24} />
+              <a href="/blog">
+                <FaNewspaper size={24} />
               </a>
               <a href="https://www.linkedin.com/in/ethan-herring-a00448132/">
                 <FaGoodreads size={24} />
@@ -53,11 +55,12 @@ const Page = () => {
               <p>Thepansfpon aseofunapsne faseoufpasefa sef asefasepfunapsekj fasefinasef kja speijf as <b>ethpaosnepaj</b> aseputahpsejbf,. as efapushetpajksnef..a sefs. aswe;fhoasuebnf; as;efna;sebf;oabse  asefnpasoienf asef asef <b>a;feuhas</b> aseufhpaiusbefiuas;iuebfausef.</p>
             </div>
             <JobCard />
-            <a href=""><div id="projects" className="text-left my-4 p-4 flex gap-1">View Full Resume{<MdOutlineArrowOutward />}</div></a>
+            <ProjectCard />
+            <a href=""><div className="fixed top-4 right-6 flex gap-1 hover:text-[#FBE094]">Full Resume{<MdOutlineArrowOutward />}</div></a>
           </div>
         </div>
       </div>
-    </RootLayout >
+    </RootLayout>
   )
 }
 

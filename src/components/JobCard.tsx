@@ -22,12 +22,12 @@ function MappedCards() {
                   <div className='text-center text-xs text-nowrap'>{job.time_period}</div>
                 </div>
                 <div>
-                  <div className="flex gap-1 justify-start text-md group-hover:text-[#57DAC7] text-nowrap">{job.job}{<div className='relative transition duration-100 ease-out group-hover:ease-in group-hover:-top-1 group-hover:-right-1'><MdOutlineArrowOutward /></div>}</div>
+                  <div className="flex gap-1 justify-start text-md group-hover:text-[#FBE094] text-nowrap">{job.job}{<div className='relative transition duration-100 ease-out group-hover:ease-in group-hover:-top-1 group-hover:-right-1'><MdOutlineArrowOutward /></div>}</div>
                   <p className='text-sm text-gray-500 mt-2'>{job.description}</p>
                   <div className="flex gap-2 justify-start mt-4">
                     {job.skills.map((skill: string) => (
-                      <div className="bg-[#112B3A] rounded-xl">
-                        <p className="text-xs text-[#57DAC7] flex justify-center p-2">{skill}</p>
+                      <div className="bg-[#756943] rounded-xl">
+                        <p className="text-xs text-[#FBE094] flex justify-center p-2">{skill}</p>
                       </div>
                     ))}
                   </div>
@@ -45,6 +45,7 @@ function JobCard() {
 
   return (
     <div id="experience" className="flex flex-col justify-center mx-auto">
+      <div className='text-center text-xl font-bold'>EXPERIENCE</div>
       <MappedCards />
     </div>
   );
