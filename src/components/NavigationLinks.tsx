@@ -31,7 +31,7 @@ function NavigationLinks() {
   const projectMouseExit = () => setProjectsHovered(false);
 
   return (
-    <div className="flex flex-col gap-4" style={{ height: "height", transition: "all .3s" }}>
+    <div className="text-gray-200 flex flex-col gap-4" style={{ height: "height", transition: "all .5s" }}>
       <a href="#about">
         <div className="flex flex-row" onMouseEnter={aboutMouseEnter} onMouseLeave={aboutMouseExit}>
 

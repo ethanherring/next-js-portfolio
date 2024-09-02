@@ -2,28 +2,30 @@
   {
     "job": "Developer - Business Intelligence III",
     "time_period": "2024 - PRESENT",
-    "description": "<div>Created Supply Chain Portal using Typescript (React JS) & Python (Fast API).</div>",
+    "description": "Development of analytics platforms & tools.",
     "job_link": "https://www.blueorigin.com/",
     "skills": [
       "ReactJS",
       "TailwindCSS",
-      "Kubernetes"
+      "Kubernetes",
+      "AWS ECS"
     ]
   },
   {
     "job": "Business Intelligence Analyst II",
     "time_period": "2022 - 2024",
-    "description": "<div>Created analytics reporting Hadoop cluster.</div>",
+    "description": "Worked to  bring data to life within supply chain. Blah blah blah testing here whatever test exting tgepoaiuhgpsoeugba;sekfna;soeif aseflausbefpasef aseiufalskef ase fpasef.",
     "job_link": "https://www.blueorigin.com/",
     "skills": [
       "AWS ECS",
-      "SQL"
+      "SQL",
+      "Grafana"
     ]
   },
   {
     "job": "Supply Chain Leadership Development Program",
     "time_period": "2020 - 2022",
-    "description": "<div>Created analytics reporting <b>Hadoop</b> cluster and migrated procurent MS Access Database to Alteryx & SQL.</div>",
+    "description": "Worked to  bring data to life within supply chain. Blah blah blah testing here whatever test exting tgepoaiuhgpsoeugba;sekfna;soeif aseflausbefpasef aseiufalskef ase fpasef.",
     "job_link": "https://www.textron.com/",
     "skills": [
       "Python",
