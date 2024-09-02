@@ -56,26 +56,28 @@ function MappedCards() {
     <div className='text-left'>
       {
         JobList.map((job: Job) => (
-          <a href={`${job.job_link}`}>
-            <div className="mx-auto max-w-[600px] group p-8 border-solid border border-transparent rounded-md hover:bg-gray-800/30 hover:border-gray-800  transition duration-100 ease-out hover:ease-in">
-              <div className='flex gap-3'>
-                <div className='w-1/4'>
-                  <div className='text-gray-200 text-center text-xs '>{job.time_period}</div>
-                </div>
-                <div className="w-3/4">
-                  <div className="text-gray-200 flex gap-1 justify-start text-sm md:text-md group-hover:text-[#57DAC7] md:text-nowrap">{job.job}{<div className='relative transition duration-100 ease-out group-hover:ease-in group-hover:-top-1 group-hover:-right-1'><MdOutlineArrowOutward /></div>}</div>
-                  <p className='text-sm text-gray-500 mt-2'>{job.description}</p>
-                  <div className="flex flex-wrap gap-2 justify-start mt-4">
-                    {job.skills.map((skill: string) => (
-                      <div className="bg-[#112B3A] rounded-xl">
-                        <p className="text-xs text-[#57DAC7] flex justify-center p-2">{skill}</p>
-                      </div>
-                    ))}
+          <div key={job.job}>
+            <a href={job.job_link}>
+              <div className="mx-auto max-w-[600px] group p-8 border-solid border border-transparent rounded-md hover:bg-gray-800/30 hover:border-gray-800  transition duration-100 ease-out hover:ease-in">
+                <div className='flex gap-3'>
+                  <div className='w-1/4'>
+                    <div className='text-gray-200 text-center text-xs'>{job.time_period}</div>
+                  </div>
+                  <div className="w-3/4">
+                    <div className="text-gray-200 flex gap-1 justify-start text-sm md:text-md group-hover:text-[#57DAC7] md:text-nowrap">{job.job}{<div className='relative transition duration-100 ease-out group-hover:ease-in group-hover:-top-1 group-hover:-right-1'><MdOutlineArrowOutward /></div>}</div>
+                    <p className='text-sm text-gray-500 mt-2'>{job.description}</p>
+                    <div className="flex flex-wrap gap-2 justify-start mt-4">
+                      {job.skills.map((skill: string) => (
+                        <div key={skill} className="bg-[#112B3A] rounded-xl">
+                          <p className="text-xs text-[#57DAC7] flex justify-center p-2">{skill}</p>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         ))
       }
     </div>
