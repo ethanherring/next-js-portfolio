@@ -4,9 +4,7 @@ import ProjectCard from "@/components/ProjectCard"
 import NavigationLinks from "@/components/NavigationLinks"
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaNewspaper } from "react-icons/fa";
 import GlowEffect from "@/components/GlowEffect";
-import IconGrid from "@/components/IconGrid";
 
 // bg-[#0F172A]
 
@@ -58,7 +56,7 @@ const Page = () => {
                   friction </b> and increases the odds of tool adoption.
               </p>
               <p className="px-8 text-md">
-                Check out my background and what I've been working below.
+                {`Check out my background and what I've been working below.`}
               </p>
             </div>
 

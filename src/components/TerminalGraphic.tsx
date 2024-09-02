@@ -103,7 +103,7 @@ const TerminalGraphic = () => {
   }
 
   // This Function Loops through each word in words and types out the word one letter at a time
-  const typeWord = (index) => {
+  const typeWord = (index: any) => {
     let currentWord = words[index] ?? "Loading..."
     let currentLetterIndex = 0
     setText("")
@@ -126,6 +126,7 @@ const TerminalGraphic = () => {
   }
 
   useEffect(() => {
+
     typeWord(currentIndex)
 
     return () => {

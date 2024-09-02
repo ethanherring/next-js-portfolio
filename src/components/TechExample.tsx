@@ -81,7 +81,7 @@ const TechExample: React.FC<ITechExampleTypes> = ({ current_platform }) => {
       <div className="h-[350px] border-2 border-solid border-white rounded-lg p-10">
         <h1 className="text-2xl">Projects:</h1>
         <ul>
-          {current_projects.map((item) => <li>{item}</li>)}
+          {current_projects.map((item) => <li key={item}>{item}</li>)}
         </ul>
         <div className=" flex gap-4 justify-center">
           <SiGoogleanalytics size={70} className="my-auto p-2  rounded-md text-indigo-500" />
