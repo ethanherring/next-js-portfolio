@@ -1,4 +1,3 @@
-import ProjectList from '../assets/Projects.json';
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 type Project = {
@@ -9,20 +8,32 @@ type Project = {
   technologies: string[],
 }
 
+const ProjectList = [
+  {
+    "project": "Terminal Graphic",
+    "time_period": "2023",
+    "description": "Terminal Graphic Created using ReactJS.                         ",
+    "project_link": "/terminalgraphic",
+    "technologies": [
+      "ReactJS",
+      "TailwindCSS"
+    ]
+  }
+]
 
 function MappedCards() {
   return (
-    <div className='text-left'>
+    <div className='text-left mt-8'>
       {
         ProjectList.map((project: Project) => (
           <a href={`${project.project_link}`}>
-            <div className="w-[600px] group my-4 p-4 border-sold border border-transparent rounded-md hover:bg-gray-800/30 hover:border-white/20  transition duration-100 ease-out hover:ease-in">
+            <div className="mx-auto max-w-[600px] group p-8 border-solid border border-transparent rounded-md hover:bg-gray-800/30 hover:border-gray-800  transition duration-100 ease-out hover:ease-in">
               <div className='flex gap-3'>
-                <div className='w-[450px]'>
-                  <div className='text-center text-xs text-nowrap'>{project.time_period}</div>
+                <div className='w-1/4'>
+                  <div className='text-gray-200 text-center text-xs text-nowrap'>{project.time_period}</div>
                 </div>
-                <div>
-                  <div className="flex gap-1 justify-start text-md group-hover:text-[#57DAC7] text-nowrap">{project.project}{<div className='relative transition duration-100 ease-out group-hover:ease-in group-hover:-top-1 group-hover:-right-1'><MdOutlineArrowOutward /></div>}</div>
+                <div className="w-3/4">
+                  <div className="flex gap-1 justify-start text-sm md:text-md group-hover:text-[#57DAC7]">{project.project}{<div className='relative transition duration-100 ease-out group-hover:ease-in group-hover:-top-1 group-hover:-right-1'><MdOutlineArrowOutward /></div>}</div>
                   <p className='text-sm text-gray-500 mt-2'>{project.description}</p>
                   <div className="flex gap-2 justify-start mt-4">
                     {project.technologies.map((technology: string) => (
@@ -44,8 +55,8 @@ function MappedCards() {
 function ProjectCard() {
 
   return (
-    <div id="projects" className="flex flex-col justify-center mx-auto mt-4">
-      <div className='text-center text-xl font-bold'>PROJECTS</div>
+    <div id="projects" className="flex flex-col justify-center">
+      <div className='px-8 text-gray-200 text-left text-lg font-bold md:text-center'>PROJECTS</div>
       <MappedCards />
     </div>
   );

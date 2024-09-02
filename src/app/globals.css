@@ -2,36 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.glow-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.3s ease-in-out;
+}
+
+.glow-effect::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+
 @layer utilities {
-      /* Hide scrollbar for Chrome, Safari and Opera */
-      .no-scrollbar::-webkit-scrollbar {
-          display: none;
-      }
-     /* Hide scrollbar for IE, Edge and Firefox */
-      .no-scrollbar {
-          -ms-overflow-style: none;  /* IE and Edge */
-          scrollbar-width: none;  /* Firefox */
-    }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
   }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+}
 
 @layer components {
   .white-glow {
-    box-shadow: 5px 5px 150px 10px rgba(255, 255, 255, 0.3);
+    /* box-shadow: 5px 5px 150px 10px rgba(255, 255, 255, 0.3); */
+    box-shadow: 0 0 50px 25px rgba(255, 255, 255, 0.3);
   }
+
   .cube-mouse-highlight {
-    box-shadow: 5px 5px 500px 50px rgba(255, 255, 255, 0.5);    
+    box-shadow: 5px 5px 500px 50px rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.1);
   }
+
   .white-glow-small {
-    box-shadow: 5px 5px 50px 10px rgba(255, 255, 255, 1); 
+    box-shadow: 5px 5px 50px 10px rgba(255, 255, 255, 1);
   }
+
   .h-minus-header {
     height: calc(100vh - 65px);
   }
 }
 
 ::selection {
-    background: blue;
+  background: blue;
 }
 
 :root {
@@ -50,12 +82,9 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 backgroundGrid {
