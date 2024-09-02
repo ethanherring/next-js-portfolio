@@ -1,9 +1,16 @@
 'use client'
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useRef, useState } from "react"
 import BlinkingCursor from "./BlinkingCursor"
 
 
-const MinimizedTerminal = ({ minimizeTerminal, closeTerminal }) => {
+interface TerminalTypes {
+  minimizeTerminal: () => void,
+  closeTerminal: () => void,
+  text?: string,
+}
+
+const MinimizedTerminal: React.FC<TerminalTypes> = ({ minimizeTerminal, closeTerminal }) => {
   return (
     <div className="h-24">
       <div className="flex flex-row justify-center align-center rounded-lg white-glow  bg-gray-800 text-white overflow-hidden">
@@ -23,7 +30,7 @@ const MinimizedTerminal = ({ minimizeTerminal, closeTerminal }) => {
   )
 }
 
-const MaximizedTerminal = ({ text, minimizeTerminal, closeTerminal }) => {
+const MaximizedTerminal: React.FC<TerminalTypes> = ({ text, minimizeTerminal, closeTerminal }) => {
   const [maximize, setMaximize] = useState(false)
 
 
