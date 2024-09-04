@@ -1,27 +1,30 @@
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 // const inter = Inter({ subsets: ['latin'] })
 const inter = Inter({
-  subsets: ['latin'], // Include the Latin character subset
+  subsets: ["latin"], // Include the Latin character subset
   // weight: "400",
-  display: 'swap', // Ensure text is visible while font loads
+  display: "swap", // Ensure text is visible while font loads
 });
 
 export const metadata: Metadata = {
-  title: 'Ethan Herring',
-  description: 'ethanherring.com',
-}
+  title: "Ethan Herring",
+  description: "ethanherring.com",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" style={{ scrollBehavior: 'smooth', overflowX: 'hidden' }}>
+    <html lang="en" style={{ scrollBehavior: "smooth", overflowX: "hidden" }}>
+      <head></head>
       <body className={inter.className}>{children}</body>
+      <GoogleAnalytics gaId="G-Q09J7SHZYX" />
     </html>
-  )
+  );
 }
