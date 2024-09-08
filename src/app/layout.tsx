@@ -24,7 +24,9 @@ export default function RootLayout({
     <html lang="en" style={{ scrollBehavior: "smooth", overflowX: "hidden" }}>
       <head></head>
       <body className={inter.className}>{children}</body>
-      <GoogleAnalytics gaId="G-Q09J7SHZYX" />
+      <GoogleAnalytics
+        gaId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_TAG ?? ""}
+      />
     </html>
   );
 }
