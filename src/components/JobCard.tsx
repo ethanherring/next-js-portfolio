@@ -1,11 +1,12 @@
 // import JobList from '../assets/JobsList.json';
 import { MdOutlineArrowOutward } from "react-icons/md";
+import type { ReactElement } from "react";
 
 type Job = {
   job: string,
-  time_period: JSX.Element,
+  time_period: ReactElement,
   job_link: string,
-  description: JSX.Element,
+  description: ReactElement,
   skills: string[],
 }
 

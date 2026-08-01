@@ -5,6 +5,7 @@ import NavigationLinks from "@/components/NavigationLinks"
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import GlowEffect from "@/components/GlowEffect";
+import Link from "next/link";
 
 // bg-[#0F172A]
 
@@ -17,9 +18,9 @@ const Page = () => {
         <div className="min-w-[200px] flex flex-col md:flex-row md:container md:h-screen md:mx-20">
           <div className="w-full md:h-full md:w-1/2 pt-11 md:overflow-auto flex flex-col gap-6"> {/* Left Screen Fixed Nav */}
             <div className="px-8">
-              <a href="/">
+              <Link href="/">
                 <p className="text-gray-200 text-wrap text-3xl md:text-2xl lg:text-5xl font-bold text-left  pb-4">ETHAN HERRING</p>
-              </a>
+              </Link>
               <p className="text-gray-200 text-md sm:text-lg lg:text-xl text-left pb-4">Software Engineer</p>
               <p className="text-left text-md text-gray-500 pb-12">Building Data Focused Applications</p>
             </div>

@@ -10,6 +10,7 @@ import { FaGoodreads } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from 'next/image';
 import GlowEffect from "@/components/GlowEffect";
+import Link from "next/link";
 
 // bg-[#0F172A]
 
@@ -26,9 +27,9 @@ const Page = () => {
         <div className="container flex h-screen mx-20">
           <div className="h-full w-1/2 pt-16 overflow-auto flex flex-col gap-6"> {/* Left Screen Fixed Nav */}
             <div className="mx-8">
-              <a href="/">
+              <Link href="/">
               <p className="text-5xl font-bold text-left mt-18 pb-4">ETHAN HERRING</p>
-              </a>
+              </Link>
               <p className="text-xl text-left font-bold pb-4">Developer - Business Intellignece III</p>
               <p className="text-left pb-12">I build engaging Full Stack data experiences.</p>
             </div>
