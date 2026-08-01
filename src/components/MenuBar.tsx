@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface IMenuBar {
   visibility: boolean;
 }
@@ -12,10 +14,10 @@ const MenuBar: React.FC<IMenuBar> = ({ visibility }) => {
   }
   return (
     <div className={`${visibility_string} flex flex-col gap-4 p-7 bg-gray-400 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 rounded-lg border border-gray-100 text-white absolute  right-9 top-10`}>
-      <a href="/#techstack" className="hover:text-gray-400">Current Tech Stack</a>
-      <a href="/#contact" className="hover:text-gray-400">Contact Me</a>
-      <a href="/#projects" className="hover:text-gray-400">Projects</a>
-      <a href="/blog" className="hover:text-gray-400">Blog</a>
+      <Link href="/#techstack" className="hover:text-gray-400">Current Tech Stack</Link>
+      <Link href="/#contact" className="hover:text-gray-400">Contact Me</Link>
+      <Link href="/#projects" className="hover:text-gray-400">Projects</Link>
+      <Link href="/blog" className="hover:text-gray-400">Blog</Link>
     </div>
   );
 }
