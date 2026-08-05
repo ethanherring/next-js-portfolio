@@ -9,7 +9,6 @@ import { FaNewspaper } from "react-icons/fa";
 import { FaGoodreads } from "react-icons/fa";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Image from 'next/image';
-import GlowEffect from "@/components/GlowEffect";
 import Link from "next/link";
 
 // bg-[#0F172A]
@@ -18,7 +17,6 @@ const Page = () => {
 
   return (
     <RootLayout>
-        <GlowEffect />
       <div className="bg-[#0F172A] text-white selection:bg-[#57DAC7]">
         {/* <MouseGridGlow /> */}
         {/* <Header /> */}

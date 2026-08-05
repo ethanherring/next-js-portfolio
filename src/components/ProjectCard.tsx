@@ -28,18 +28,18 @@ function MappedCards() {
         ProjectList.map((project: Project) => (
           <div key={project.project}>
             <a href={`${project.project_link}`}>
-              <div className="mx-auto max-w-[600px] group p-8 border-solid border border-transparent rounded-md hover:bg-gray-800/30 hover:border-gray-800  transition duration-100 ease-out hover:ease-in">
+              <div className="theme-card mx-auto max-w-[600px] group p-8 border-solid border rounded-md transition duration-100 ease-out hover:ease-in">
                 <div className='flex gap-3'>
                   <div className='w-1/4'>
-                    <div className='text-gray-200 text-center text-xs text-nowrap'>{project.time_period}</div>
+                    <div className='theme-heading text-center text-xs text-nowrap'>{project.time_period}</div>
                   </div>
                   <div className="w-3/4">
-                    <div className="flex gap-1 justify-start text-sm md:text-md group-hover:text-[#57DAC7]">{project.project}{<div className='relative transition duration-100 ease-out group-hover:ease-in group-hover:-top-1 group-hover:-right-1'><MdOutlineArrowOutward /></div>}</div>
-                    <p className='text-sm text-gray-500 mt-2'>{project.description}</p>
+                    <div className="theme-card-title theme-heading flex gap-1 justify-start text-sm md:text-md group-hover:underline">{project.project}{<div className='relative transition duration-100 ease-out group-hover:ease-in group-hover:-top-1 group-hover:-right-1'><MdOutlineArrowOutward /></div>}</div>
+                    <p className='theme-muted text-sm mt-2'>{project.description}</p>
                     <div className="flex gap-2 justify-start mt-4">
                       {project.technologies.map((technology: string) => (
-                        <div key={technology} className="bg-[#112B3A] rounded-xl my-auto">
-                          <p className="text-xs text-[#57DAC7] text-nowrap flex justify-center p-2">{technology}</p>
+                        <div key={technology} className="theme-pill rounded-xl my-auto">
+                          <p className="text-xs text-nowrap flex justify-center p-2">{technology}</p>
                         </div>
                       ))}
                     </div>
@@ -58,7 +58,7 @@ function ProjectCard() {
 
   return (
     <div id="projects" className="flex flex-col justify-center">
-      <div className='px-8 text-gray-200 text-left text-lg font-bold md:text-center'>PROJECTS</div>
+      <div className='theme-heading px-8 text-left text-lg font-bold md:text-center'>PROJECTS</div>
       <MappedCards />
     </div>
   );
