@@ -9,15 +9,17 @@ import { Button } from "@/components/ui/button";
 const products = [
   {
     number: "01",
-    name: "Product name",
+    name: "Rolesmith",
     description:
-      "Add one clear sentence explaining what it does, who it is for, and why it is worth building.",
+      "Hosted or self-hosted identity infrastructure that makes roles and fine-grained permissions easy to model once and use everywhere.",
+    href: "/rolesmith",
   },
   {
     number: "02",
     name: "Product name",
     description:
       "Use this space for the outcome or problem—not a list of frameworks and implementation details.",
+    href: "#products",
   },
 ];
 
@@ -90,7 +92,10 @@ export default function Page() {
                   </p>
                   <div>
                     <h3 className="text-2xl font-semibold tracking-[-0.03em] transition-colors group-hover:text-primary">
-                      {product.name}
+                      <Link href={product.href} className="inline-flex items-center gap-2">
+                        {product.name}
+                        {product.href !== "#products" && <ArrowRight className="size-5" />}
+                      </Link>
                     </h3>
                     <p className="mt-3 max-w-2xl leading-7 text-muted-foreground">
                       {product.description}

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Moon, Sun } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 
@@ -24,6 +25,7 @@ const getTheme = (): Theme => {
 };
 
 export default function ThemeToggle() {
+  const pathname = usePathname();
   const [theme, setTheme] = useState<Theme | null>(null);
 
   useEffect(() => {
@@ -43,6 +45,10 @@ export default function ThemeToggle() {
   };
 
   const isDark = theme === "dark";
+
+  if (pathname.startsWith("/rolesmith")) {
+    return null;
+  }
 
   return (
     <Button

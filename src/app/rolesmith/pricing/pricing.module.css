@@ -1,0 +1,395 @@
+.hero {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 118px 42px 94px;
+  text-align: center;
+}
+
+.eyebrow,
+.kicker {
+  color: #a33b23;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.eyebrow span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #ff5c35;
+  box-shadow: 0 0 0 5px rgba(255, 92, 53, .13);
+}
+
+.hero h1 {
+  max-width: 950px;
+  margin: 25px auto 0;
+  font-size: clamp(4.4rem, 8vw, 8rem);
+  font-weight: 800;
+  letter-spacing: -.075em;
+  line-height: .87;
+}
+
+.hero > p {
+  max-width: 690px;
+  margin: 32px auto 0;
+  color: #5b574e;
+  font-size: 19px;
+  line-height: 1.65;
+}
+
+.promises {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 25px;
+  margin-top: 32px;
+  color: #625e55;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.promises span { display: inline-flex; align-items: center; gap: 6px; }
+.promises svg { color: #ff5c35; }
+
+.plansSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 42px 120px;
+}
+
+.sectionLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-top: 1px solid rgba(21, 20, 17, .17);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.sectionLabel span { color: #8a847a; }
+
+.planGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.planCard {
+  min-height: 680px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 38px;
+  border: 1px solid rgba(21, 20, 17, .17);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, .42);
+}
+
+.featured {
+  color: #fffaf0;
+  background: #151411;
+  border-color: #151411;
+  box-shadow: 0 25px 70px rgba(20, 17, 12, .18);
+}
+
+.bestValue {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 9px;
+  color: #ffb29f;
+  background: rgba(255, 92, 53, .14);
+  border-radius: 99px;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.planEyebrow {
+  color: #8b857b;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.featured .planEyebrow { color: #aaa59c; }
+
+.planCard h2 {
+  margin-top: 28px;
+  font-size: 38px;
+  font-weight: 800;
+  letter-spacing: -.055em;
+}
+
+.priceRow {
+  min-height: 106px;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  margin-top: 12px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid rgba(21, 20, 17, .15);
+}
+
+.featured .priceRow { border-bottom-color: rgba(255, 255, 255, .14); }
+
+.priceRow strong {
+  font-size: clamp(3.7rem, 5.3vw, 5.3rem);
+  font-weight: 800;
+  letter-spacing: -.07em;
+  line-height: .8;
+}
+
+.priceRow span {
+  max-width: 130px;
+  padding-bottom: 2px;
+  color: #777168;
+  font-size: 10px;
+  line-height: 1.35;
+}
+
+.featured .priceRow span { color: #aaa59c; }
+
+.planDescription {
+  min-height: 72px;
+  margin-top: 23px;
+  color: #625e55;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.featured .planDescription { color: #b8b3aa; }
+
+.planCta {
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+  color: #fff;
+  background: #151411;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 900;
+  transition: transform .2s ease, background .2s ease;
+}
+
+.featured .planCta { background: #ff5c35; }
+.planCta:hover { transform: translateY(-2px); background: #ff5c35; }
+
+.planCard ul {
+  display: grid;
+  gap: 14px;
+  margin-top: 32px;
+  font-size: 12px;
+}
+
+.planCard li { display: flex; align-items: flex-start; gap: 9px; }
+.planCard li svg { flex: 0 0 auto; color: #ff5c35; }
+.pricingNote { margin-top: 14px; color: #7e786f; font-size: 10px; text-align: right; }
+
+.capSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 110px 90px;
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  align-items: center;
+  gap: 100px;
+  color: #fffaf0;
+  background: #151411;
+  border-radius: 24px;
+}
+
+.capSection .kicker,
+.waitlistSection .kicker { color: #ff9a81; }
+
+.capCopy h2,
+.includedHeading h2,
+.faqHeading h2,
+.waitlistSection h2 {
+  margin-top: 14px;
+  font-size: clamp(2.8rem, 5vw, 5.2rem);
+  font-weight: 800;
+  letter-spacing: -.065em;
+  line-height: .95;
+}
+
+.capCopy > p:last-child {
+  max-width: 560px;
+  margin-top: 26px;
+  color: #aaa59c;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.capChart {
+  padding: 32px;
+  background: #1d1c19;
+  border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: 15px;
+}
+
+.chartTop,
+.chartAxis {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #8f8a81;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.chartTop strong { color: #ff9a81; font: 12px monospace; }
+
+.bars {
+  height: 260px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  align-items: end;
+  gap: 9px;
+  margin-top: 30px;
+  padding: 0 5px 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, .12);
+}
+
+.barColumn {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 7px;
+}
+
+.barValue { min-height: 12px; color: #aaa59c; font: 9px monospace; }
+.bar { width: 100%; max-width: 42px; background: #5b574f; border-radius: 4px 4px 1px 1px; }
+.cappedBar { background: #ff5c35; box-shadow: 0 0 28px rgba(255, 92, 53, .23); }
+.barColumn small { color: #777168; font: 9px monospace; }
+.chartAxis { margin-top: 15px; }
+.chartAxis span:last-child { display: inline-flex; align-items: center; gap: 5px; color: #ff9a81; }
+
+.includedSection,
+.faqSection {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 130px 42px;
+}
+
+.includedHeading { max-width: 800px; }
+.includedHeading > p:last-child { max-width: 660px; margin-top: 25px; color: #625e55; font-size: 17px; line-height: 1.65; }
+
+.includedGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 65px;
+  border-top: 1px solid rgba(21, 20, 17, .17);
+  border-left: 1px solid rgba(21, 20, 17, .17);
+}
+
+.includedGrid article {
+  min-height: 265px;
+  padding: 30px;
+  border-right: 1px solid rgba(21, 20, 17, .17);
+  border-bottom: 1px solid rgba(21, 20, 17, .17);
+}
+
+.includedGrid article > svg { color: #ff5c35; }
+.includedGrid h3 { margin-top: 65px; font-size: 17px; font-weight: 800; letter-spacing: -.025em; }
+.includedGrid p { margin-top: 12px; color: #706a61; font-size: 12px; line-height: 1.65; }
+
+.faqSection {
+  display: grid;
+  grid-template-columns: .7fr 1.3fr;
+  gap: 90px;
+  padding-top: 75px;
+}
+
+.faqHeading > svg { margin-bottom: 25px; color: #ff5c35; }
+.faqList { border-top: 1px solid rgba(21, 20, 17, .17); }
+.faqList article { padding: 30px 0; border-bottom: 1px solid rgba(21, 20, 17, .17); }
+.faqList h3 { font-size: 17px; font-weight: 800; letter-spacing: -.025em; }
+.faqList p { max-width: 700px; margin-top: 12px; color: #625e55; font-size: 14px; line-height: 1.7; }
+
+.waitlistSection {
+  max-width: 1316px;
+  min-height: 430px;
+  margin: 0 auto 42px;
+  padding: 78px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 85px;
+  color: #fffaf0;
+  background: #ff5c35;
+  border-radius: 22px;
+}
+
+.waitlistSection > div:first-child > p:last-child {
+  max-width: 600px;
+  margin-top: 24px;
+  color: rgba(255, 255, 255, .82);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+.waitlistForm :global(button) { background: #151411; }
+.waitlistForm :global(p) { color: rgba(255, 255, 255, .76); }
+
+@media (max-width: 1050px) {
+  .planGrid { grid-template-columns: 1fr; }
+  .planCard { min-height: 0; }
+  .planDescription { min-height: 0; }
+  .capSection { margin: 0 20px; padding: 75px 45px; grid-template-columns: 1fr; gap: 60px; }
+  .includedGrid { grid-template-columns: repeat(2, 1fr); }
+  .waitlistSection { margin: 0 20px 32px; padding: 65px 45px; grid-template-columns: 1fr; gap: 38px; }
+}
+
+@media (max-width: 700px) {
+  .hero { padding: 84px 20px 70px; text-align: left; }
+  .hero h1 { margin-left: 0; font-size: clamp(4rem, 19vw, 5.4rem); }
+  .hero > p { margin-left: 0; font-size: 16px; }
+  .promises { justify-content: flex-start; }
+  .plansSection { padding: 0 20px 90px; }
+  .sectionLabel { align-items: flex-start; gap: 20px; }
+  .sectionLabel span { text-align: right; }
+  .planCard { padding: 30px 24px; }
+  .bestValue { position: static; width: max-content; margin-bottom: 22px; }
+  .priceRow { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .priceRow strong { font-size: 4.5rem; }
+  .pricingNote { text-align: left; line-height: 1.5; }
+  .capSection { margin: 0 10px; padding: 65px 20px; border-radius: 17px; }
+  .capChart { padding: 22px 14px; }
+  .bars { height: 210px; gap: 5px; }
+  .barValue { font-size: 7px; }
+  .chartAxis span:last-child { display: none; }
+  .includedSection, .faqSection { padding: 95px 20px; }
+  .includedGrid { grid-template-columns: 1fr; }
+  .includedGrid article { min-height: 220px; }
+  .includedGrid h3 { margin-top: 45px; }
+  .faqSection { grid-template-columns: 1fr; gap: 48px; }
+  .waitlistSection { margin: 0 10px 20px; padding: 58px 20px; border-radius: 17px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .planCta { transition: none; }
+}
